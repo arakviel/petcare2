@@ -15,6 +15,7 @@
     <None Include=".dockerignore" />
     <None Include="migrate.sh" />
     <None Include="wait-for-db.sh" />
+    <None Include="wait-for-migrations.sh" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">

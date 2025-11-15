@@ -38,19 +38,21 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends netcat-traditional postgresql-client && \
     rm -rf /var/lib/apt/lists/*
 
-# --- Копіюємо dotnet-ef ---
-COPY --from=build /root/.dotnet/tools /root/.dotnet/tools
-ENV PATH="$PATH:/root/.dotnet/tools"
+# --- Копіюємо dotnet-ef tools to runtime ---
+COPY --from=build /root/.dotnet/tools /usr/share/dotnet/tools
+ENV PATH="$PATH:/usr/share/dotnet/tools"
 
 # --- Копіюємо результати ---
 COPY --from=build /app/publish .
 
-# --- Копіюємо скрипт очікування бази ---
+# --- Копіюємо скрипти очікування бази та міграцій ---
 COPY --from=build /src/PetCare.Api/wait-for-db.sh /wait-for-db.sh
-RUN chmod +x /wait-for-db.sh
+COPY --from=build /src/PetCare.Api/wait-for-migrations.sh /wait-for-migrations.sh
+RUN chmod +x /wait-for-db.sh /wait-for-migrations.sh
 
 # --- ENV налаштування ---
 ENV ASPNETCORE_ENVIRONMENT=Development
 ENV ASPNETCORE_URLS=http://+:5100
 
-ENTRYPOINT ["/wait-for-db.sh", "db", "5432", "dotnet", "/app/PetCare.Api.dll"]
+# Use the new migration script as entrypoint
+ENTRYPOINT ["/wait-for-migrations.sh", "db", "5432", "dotnet", "/app/PetCare.Api.dll"]
