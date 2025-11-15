@@ -1,0 +1,358 @@
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww]in32/
+[Á-ú-ž-Ž][Dd]ebug/
+[Rr]elease/
+[Bb]uild/
+[Bb]uilds/
+.vs
+
+# Visual Studio and .NET files
+*.suo
+*.sln.docstates
+*.user
+*.userosscache
+*.sln.cache
+*.cache
+*.dotCover
+*.ncrunchsolution
+*.ncrunchproject
+*.ncrunchstorage
+*.nCrunchLastGenerationInfo
+*.nCoverProfile
+*.anonymized.sln
+*.opendocument
+*.csproj.user
+*.vbproj.user
+*.fsproj.user
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# MSBuild
+*.targets
+*.props
+Directory.Build.props
+Directory.Build.targets
+
+# NuGet
+packages/
+*.nuget.props
+*.nuget.targets
+NuGet.Config
+nuget.config
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+MSBuild.CoreCompileInputs.cache
+
+# JetBrains ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+*.dotSettings.user
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cabundle
+
+# macOS
+.DS_Store
+
+# Linux
+*~
+
+# Logs
+*.log
+*.log.*
+logs/
+artifacts/logs/
+
+# Runtime data
+AppData/
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# User-specific files
+*.sln.docstates
+*.suo
+*.user
+*.vs10user
+*.vs2010user
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# SQL Server Express LocalDb
+*.dbmdl
+
+# SQL Server backup files
+*.bak
+*.trn
+
+# Backup files
+backup-*.sql
+backup.sql
+*.backup
+*.tmp
+
+# Test results
+TestResults/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestSession.*
+
+# Coverage results
+*.coverage
+*.coveragexml
+*.ncov
+*.codecov
+coverage/
+coverlet/
+*.lcov
+
+# Binary and object files
+*.dll
+*.dll.config
+*.exe
+*.exe.config
+*.pdb
+*.mdb
+*.dll.intermediate
+*.exe.intermediate
+*.winmd
+*.pri
+*.zip
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.7z
+
+# NuGet packages
+packages/
+*.nupkg
+!*.nuget.props
+!*.nuget.targets
+!packages/repositories.config
+
+# MSBuild
+obj/
+[Bb]in/
+[Bb]uild/
+[Bb]uilds/
+
+# ASP.NET
+*.pubxml
+*.publish.xml
+*.sqlproj.bak
+*.dbproj.bak
+
+# ASP.NET Core
+wwwroot/
+web.config
+*.db
+
+# Docker
+docker-compose.override.yml
+docker-compose.dcproj.user
+
+# Minio
+minio/
+
+# Serilog logs
+Logs/
+logs/
+*.log
+
+# StyleCop
+stylecop.cache
+
+# Entity Framework
+*.Local.db
+
+# Entity Framework migration backups
+*.bak
+
+# Azure
+service.settings.json
+
+# Azure Web App publish settings
+*.publishsettings
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Bower
+bower_components/
+
+# Grunt
+.grunt
+
+# StyleCop
+stylecop.cache
+
+# Web essentials
+*.we.config
+
+# Webstorm
+.idea/
+
+# OmniSharp
+omnisharp.log
+
+# Local History
+.localhistory/
+
+# Cake - Uncomment if you are using it
+# tools/
+# addins/
+
+# Microsoft Azure SDK for Node.js
+.staging/
+
+# TFS
+TeamBuild/
+
+# MSBuild binaries
+*.build.csproj
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# SQL Server Express LocalDb
+*.dbmdl
+
+# SQL Server backup files
+*.bak
+*.trn
+
+# Compiled TypeScript
+*.d.ts
+*.js.map
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+public/
+
+# Vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores of RubyMotion commands
+.rubymotion/
+
+# JetBrains IDEs
+.idea/
+
+# F# FSI files
+*.fsi
+*.fsx
+
+# MSBuild temporary files
+*.user.backup
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# SQL Server Express LocalDb
+*.dbmdl
+
+# SQL Server backup files
+*.bak
+*.trn
+
+# Compiled TypeScript
+*.d.ts
+*.js.map
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Next.js build output
+.next/
+
+# Nuxt.js build output
+.nuxt/
+
+# Gatsby files
+.cache/
+public/
+
+# Vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores of RubyMotion commands
+.rubymotion/
+
+# F# FSI files
+*.fsi
+*.fsx
+
+# MSBuild temporary files
+*.user.backup
+
+# Temporary files
+*.tmp
+*.temp
